@@ -1,0 +1,12 @@
+@use "../abstract/variaveis";
+@use "../abstract/mixins";
+
+.pai_container {
+    height: 60%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    background-color: variaveis.$Dark-Blue;
+    @include mixins.family-size-weigh-color(variaveis.$Font-Overpass, 1rem, 300, variaveis.$Very-Dark-Blue);
+    padding: 20px;
+}
