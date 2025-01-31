@@ -6,29 +6,84 @@
     width: 30%;
     display: flex;
     flex-direction: column;
+    gap: 10px;
     background-color: variaveis.$Dark-Blue;
     font-family: variaveis.$Font-Overpass;
     box-shadow: 5px 5px 20px black;
     border-radius: 30px;
-    padding: 20px;
+    padding: 30px;
+    .filho_conatiner {
+        margin-bottom: 20px ;
+    }
     .filho_conatiner img {
         background-color: variaveis.$Dark-Blue;
         padding: 15px;
-        box-shadow: 2px 2px 20px variaveis.$Very-Dark-Blue;
+        box-shadow: 10px  10px 50px variaveis.$Very-Dark-Blue;
         border-radius: 50px;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
     .text_filho {
         display: flex;
         flex-direction: column;
-        gap: 6px;
+        gap: 10px;
     }
     h2 {
-        @include mixins.size-weight-color(1.5rem, 700, variaveis.$White);
+        @include mixins.size-weight-color(2rem, 700, variaveis.$White);
     }
     p {
         @include mixins.size-weight-color(0.9rem , 300, variaveis.$Light-Grey);
+        padding-right: 80px ;
     }
+    .filho_meio {
+       display: flex;
+       flex-direction: column;
+       gap: 30px;
+       span {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    input[type="button"] {
+        padding: 17px 22px;
+        box-shadow: -5px 10px 50px black;
+        border-radius: 60px;
+        border: none;
+        background-color: variaveis.$Dark-Blue;
+        @include mixins.size-weight-color(1rem , 600, variaveis.$Light-Grey);
+        cursor: pointer;
+    }
+    input[type="button"]:hover {
+        background-color: variaveis.$White;
+        @include mixins.size-weight-color(1rem , 600, variaveis.$Dark-Blue);
+        transition: 0.3s ease-in-out;
+    }
+    input[type="button"]:active {
+        background-color: variaveis.$orange;
+        @include mixins.size-weight-color(1rem , 600, variaveis.$Very-Dark-Blue);
+        transition: 0.1s ease;
+
+    }
+
+    button {
+        padding: 15px 22px;
+        border-radius: 60px;
+        border: none;
+        background-color: variaveis.$orange;
+        @include mixins.size-weight-color(1rem , 600, variaveis.$Very-Dark-Blue);
+        box-shadow: 10px 5px 50px black;
+        cursor: pointer;
+    }
+    
+    button:active {
+        background-color: variaveis.$White;
+        transition: 0.3s ease;
+    }
+
+    }
+   
+
+    
     
     
 }

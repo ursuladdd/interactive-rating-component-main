@@ -17,26 +17,30 @@ body {
   width: 30%;
   display: flex;
   flex-direction: column;
+  gap: 10px;
   background-color: #252d37;
   font-family: "Overpass", serif;
   box-shadow: 5px 5px 20px black;
   border-radius: 30px;
-  padding: 20px;
+  padding: 30px;
+}
+.pai_container .filho_conatiner {
+  margin-bottom: 20px;
 }
 .pai_container .filho_conatiner img {
   background-color: #252d37;
   padding: 15px;
-  box-shadow: 2px 2px 20px #121417;
+  box-shadow: 10px 10px 50px #121417;
   border-radius: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .pai_container .text_filho {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 10px;
 }
 .pai_container h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #ffffff;
 }
@@ -44,6 +48,57 @@ body {
   font-size: 0.9rem;
   font-weight: 300;
   color: #959eac;
+  padding-right: 80px;
+}
+.pai_container .filho_meio {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.pai_container .filho_meio span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.pai_container .filho_meio input[type=button] {
+  padding: 17px 22px;
+  box-shadow: -5px 10px 50px black;
+  border-radius: 60px;
+  border: none;
+  background-color: #252d37;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #959eac;
+  cursor: pointer;
+}
+.pai_container .filho_meio input[type=button]:hover {
+  background-color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #252d37;
+  transition: 0.3s ease-in-out;
+}
+.pai_container .filho_meio input[type=button]:active {
+  background-color: #fb7413;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #121417;
+  transition: 0.1s ease;
+}
+.pai_container .filho_meio button {
+  padding: 15px 22px;
+  border-radius: 60px;
+  border: none;
+  background-color: #fb7413;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #121417;
+  box-shadow: 10px 5px 50px black;
+  cursor: pointer;
+}
+.pai_container .filho_meio button:active {
+  background-color: #ffffff;
+  transition: 0.3s ease;
 }
 
 .thanks_container {
