@@ -17,4 +17,8 @@ body {
   font-weight: 300;
   color: #121417;
   padding: 20px;
+}
+
+.thanks_container {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
