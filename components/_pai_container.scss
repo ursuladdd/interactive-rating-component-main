@@ -2,17 +2,32 @@
 @use "../abstract/mixins";
 
 .pai_container {
-    height: 60%;
-    width: 60%;
+    
+    width: 30%;
     display: flex;
     flex-direction: column;
     background-color: variaveis.$Dark-Blue;
-    @include mixins.family-size-weigh-color(variaveis.$Font-Overpass, 1rem, 300, variaveis.$Very-Dark-Blue);
+    font-family: variaveis.$Font-Overpass;
+    box-shadow: 5px 5px 20px black;
+    border-radius: 30px;
     padding: 20px;
+    .filho_conatiner img {
+        background-color: variaveis.$Dark-Blue;
+        padding: 15px;
+        box-shadow: 2px 2px 20px variaveis.$Very-Dark-Blue;
+        border-radius: 50px;
+        margin-bottom: 20px;
+    }
     .text_filho {
         display: flex;
         flex-direction: column;
         gap: 6px;
+    }
+    h2 {
+        @include mixins.size-weight-color(1.5rem, 700, variaveis.$White);
+    }
+    p {
+        @include mixins.size-weight-color(0.9rem , 300, variaveis.$Light-Grey);
     }
     
     

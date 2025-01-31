@@ -1,5 +1,4 @@
-@mixin family-size-weigh-color($family, $size, $weigh, $color) {
-    font-family: $family;
+@mixin size-weight-color( $size, $weigh, $color) {
     font-size: $size;
     font-weight: $weigh;
     color: $color;
