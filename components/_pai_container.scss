@@ -62,7 +62,6 @@
         background-color: variaveis.$orange;
         @include mixins.size-weight-color(1rem , 600, variaveis.$Very-Dark-Blue);
         transition: 0.1s ease;
-
     }
 
     button {
