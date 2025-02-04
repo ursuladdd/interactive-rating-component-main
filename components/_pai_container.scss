@@ -44,8 +44,12 @@
         justify-content: space-between;
     }
 
-    input[type="button"] {
-        padding: 17px 22px;
+    input[type="radio"] {
+        display: none;
+    }
+
+    label {
+        padding: 18px 24px;
         box-shadow: -5px 10px 50px black;
         border-radius: 60px;
         border: none;
@@ -53,15 +57,15 @@
         @include mixins.size-weight-color(1rem , 600, variaveis.$Light-Grey);
         cursor: pointer;
     }
-    input[type="button"]:hover {
+    label:hover {
         background-color: variaveis.$White;
         @include mixins.size-weight-color(1rem , 600, variaveis.$Dark-Blue);
         transition: 0.3s ease-in-out;
     }
-    input[type="button"]:active {
+    input[type="radio"]:checked + label {
         background-color: variaveis.$orange;
         @include mixins.size-weight-color(1rem , 600, variaveis.$Very-Dark-Blue);
-        transition: 0.1s ease;
+        transition: 0.3s ease;
     }
 
     button {

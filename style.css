@@ -60,8 +60,11 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
-.pai_container .filho_meio input[type=button] {
-  padding: 17px 22px;
+.pai_container .filho_meio input[type=radio] {
+  display: none;
+}
+.pai_container .filho_meio label {
+  padding: 18px 24px;
   box-shadow: -5px 10px 50px black;
   border-radius: 60px;
   border: none;
@@ -71,19 +74,19 @@ body {
   color: #959eac;
   cursor: pointer;
 }
-.pai_container .filho_meio input[type=button]:hover {
+.pai_container .filho_meio label:hover {
   background-color: #ffffff;
   font-size: 1rem;
   font-weight: 600;
   color: #252d37;
   transition: 0.3s ease-in-out;
 }
-.pai_container .filho_meio input[type=button]:active {
+.pai_container .filho_meio input[type=radio]:checked + label {
   background-color: #fb7413;
   font-size: 1rem;
   font-weight: 600;
   color: #121417;
-  transition: 0.1s ease;
+  transition: 0.3s ease;
 }
 .pai_container .filho_meio button {
   padding: 15px 22px;
