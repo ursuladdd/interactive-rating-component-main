@@ -1,3 +1,35 @@
 document.addEventListener('DOMContentLoaded', () => {
+    let bannerCollection = document.getElementById("pai_container");
+    let form = document.getElementById("btn-value");
+    let numbersSatisfied = document.getElementsByName("group");
+    let submit = document.getElementById("concluido");
+
+
+    submit.addEventListener('click', () => {
+        let form = document.getElementById("btn-value");
+        let numbersSatisfied = document.getElementsByName("group");
+
+        function validacaoForm(numbersSatisfied) {
+            for (let i = 0; i < numbersSatisfied.length; i++) {
+              if (numbersSatisfied[i].checked) {
+                return true; // Pelo menos um botão está marcado
+              }
+            }
+            alert("Avalie de 1 a 5, por favor");
+            return false; // Nenhum botão está marcado
+          }
+        
+          if (validacaoForm(numbersSatisfied)) {
+            // Validação passou, o formulário pode ser enviado
+            console.log("certo");
+            
+          } else {
+            // Validação falhou, o formulário não será enviado
+          }
+
+    } )
+
+
     
+
 }) 
