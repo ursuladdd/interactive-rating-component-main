@@ -105,5 +105,25 @@ body {
 }
 
 .thanks_container {
+  width: 30%;
   display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #252d37;
+  font-family: "Overpass", serif;
+  box-shadow: 5px 5px 20px black;
+  border-radius: 30px;
+  padding: 40px;
+}
+.thanks_container .img_selected {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.thanks_container .img_selected img {
+  width: 40%;
+}
+.thanks_container .text_thanks {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
