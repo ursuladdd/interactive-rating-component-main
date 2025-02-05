@@ -3,6 +3,12 @@ document.addEventListener('DOMContentLoaded', () => {
     let form = document.getElementById("btn-value");
     let numbersSatisfied = document.getElementsByName("group");
     let submit = document.getElementById("concluido");
+    let bannerThankYou = document.getElementById("thanks_container");
+    let select = document.getElementsByTagName("strong");
+
+
+// Na tela inicial vai parecer o bannerCollecttion, então o bannerThankYou vai ter o display none
+    bannerThankYou.style.display = "none";
 
 
     submit.addEventListener('click', () => {
@@ -12,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         function validacaoForm(numbersSatisfied) {
             for (let i = 0; i < numbersSatisfied.length; i++) {
               if (numbersSatisfied[i].checked) {
-                return true; // Pelo menos um botão está marcado
+                return numbersSatisfied[i].value;// Pelo menos um botão está marcado
               }
             }
             alert("Avalie de 1 a 5, por favor");
@@ -20,8 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         
           if (validacaoForm(numbersSatisfied)) {
+            
             // Validação passou, o formulário pode ser enviado
-            // bannerCollection.style.display= "none";
+            bannerCollection.style.display= "none";
+            bannerThankYou.style.display= "flex";
+            
           
             
           } else {
