@@ -4,28 +4,43 @@
 
 
 .thanks_container {
-    width: 30%;
+    width: 25%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
     background-color: variaveis.$Dark-Blue;
     font-family: variaveis.$Font-Overpass;
     box-shadow: 5px 5px 20px black;
     border-radius: 30px;
-    padding: 40px;
+    padding: 30px 15px;
     .img_selected {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 40px;
-       
+        gap: 30px;
+        strong {
+            box-shadow: 6px 12px 70px black;
+            border-radius: 60px;
+            padding: 8px 18px 6px  18px;
+            @include mixins.size-weight-color(0.9rem, 400, variaveis.$orange);
+        }
+
        img {
         width: 40%;
+        
        }
 
     }
     .text_thanks {
-        text-align: center;
+       text-align: center;
+        h2 {
+            @include mixins.size-weight-color(2rem, 800, variaveis.$White);
+        }
+        p {
+            @include mixins.size-weight-color(0.9rem, 400, variaveis.$Light-Grey);
+            line-height: 20px;
+            padding: 10px 15px;
+        }
     }
     
 }

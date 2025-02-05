@@ -4,7 +4,7 @@
 .pai_container {
     
     width: 30%;
-    display: none;
+    display: flex;
     flex-direction: column;
     gap: 10px;
     background-color: variaveis.$Dark-Blue;

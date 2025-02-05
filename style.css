@@ -15,7 +15,7 @@ body {
 
 .pai_container {
   width: 30%;
-  display: none;
+  display: flex;
   flex-direction: column;
   gap: 10px;
   background-color: #252d37;
@@ -105,25 +105,45 @@ body {
 }
 
 .thanks_container {
-  width: 30%;
+  width: 25%;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
   background-color: #252d37;
   font-family: "Overpass", serif;
   box-shadow: 5px 5px 20px black;
   border-radius: 30px;
-  padding: 40px;
+  padding: 30px 15px;
 }
 .thanks_container .img_selected {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 30px;
+}
+.thanks_container .img_selected strong {
+  box-shadow: 6px 12px 70px black;
+  border-radius: 60px;
+  padding: 8px 18px 6px 18px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #fb7413;
 }
 .thanks_container .img_selected img {
   width: 40%;
 }
 .thanks_container .text_thanks {
   text-align: center;
+}
+.thanks_container .text_thanks h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+.thanks_container .text_thanks p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #959eac;
+  line-height: 20px;
+  padding: 10px 15px;
 }/*# sourceMappingURL=style.css.map */
