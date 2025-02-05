@@ -15,7 +15,7 @@ body {
 
 .pai_container {
   width: 30%;
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 10px;
   background-color: #252d37;
@@ -105,5 +105,5 @@ body {
 }
 
 .thanks_container {
-  display: none;
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

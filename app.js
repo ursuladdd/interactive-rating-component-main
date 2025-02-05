@@ -21,7 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
         
           if (validacaoForm(numbersSatisfied)) {
             // Validação passou, o formulário pode ser enviado
-            console.log("certo");
+            // bannerCollection.style.display= "none";
+          
             
           } else {
             // Validação falhou, o formulário não será enviado
