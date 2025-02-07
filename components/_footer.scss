@@ -1,0 +1,12 @@
+@use "../abstract/variaveis";
+@use "../abstract/mixins";
+
+.attribution {
+    margin-top: 14px;
+    @include mixins.size-weight-color(1rem, 500, variaveis.$White);
+    font-family: variaveis.$Font-Overpass;
+    a {
+        text-decoration: none;
+        color: variaveis.$orange;
+    }
+}
