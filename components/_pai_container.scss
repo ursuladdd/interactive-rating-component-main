@@ -3,10 +3,10 @@
 
 .pai_container {
     
-    width: 30%;
+    width: 27.5%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
     background-color: variaveis.$Dark-Blue;
     font-family: variaveis.$Font-Overpass;
     box-shadow: 5px 5px 20px black;
@@ -20,7 +20,7 @@
         padding: 15px;
         box-shadow: 10px  10px 50px variaveis.$Very-Dark-Blue;
         border-radius: 50px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
     .text_filho {
         display: flex;
@@ -32,7 +32,8 @@
     }
     p {
         @include mixins.size-weight-color(0.9rem , 300, variaveis.$Light-Grey);
-        padding-right: 80px ;
+        line-height: 22px;
+        padding-right: 20px ;
     }
     .filho_meio {
        display: flex;

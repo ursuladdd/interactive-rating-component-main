@@ -14,10 +14,10 @@ body {
 }
 
 .pai_container {
-  width: 30%;
+  width: 27.5%;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
   background-color: #252d37;
   font-family: "Overpass", serif;
   box-shadow: 5px 5px 20px black;
@@ -32,7 +32,7 @@ body {
   padding: 15px;
   box-shadow: 10px 10px 50px #121417;
   border-radius: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .pai_container .text_filho {
   display: flex;
@@ -48,7 +48,8 @@ body {
   font-size: 0.9rem;
   font-weight: 300;
   color: #959eac;
-  padding-right: 80px;
+  line-height: 22px;
+  padding-right: 20px;
 }
 .pai_container .filho_meio {
   display: flex;
