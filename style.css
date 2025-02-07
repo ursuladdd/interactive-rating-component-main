@@ -93,11 +93,13 @@ body {
   border-radius: 60px;
   border: none;
   background-color: #fb7413;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color: #121417;
   box-shadow: 10px 5px 50px black;
   cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 .pai_container .filho_meio button:active {
   background-color: #ffffff;
@@ -184,5 +186,12 @@ body {
   }
   .pai_container .filho_meio label {
     padding: 14px 20px;
+  }
+  .pai_container .filho_meio button {
+    padding: 18px 22px;
+  }
+  .thanks_container {
+    height: 400px;
+    width: 90%;
   }
 }/*# sourceMappingURL=style.css.map */

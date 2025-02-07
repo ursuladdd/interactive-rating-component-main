@@ -73,9 +73,11 @@
         border-radius: 60px;
         border: none;
         background-color: variaveis.$orange;
-        @include mixins.size-weight-color(1rem , 600, variaveis.$Very-Dark-Blue);
+        @include mixins.size-weight-color(0.9rem , 600, variaveis.$Very-Dark-Blue);
         box-shadow: 10px 5px 50px black;
         cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 2px;
     }
     
     button:active {
