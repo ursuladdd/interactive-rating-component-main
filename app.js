@@ -38,7 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
             select[0].innerHTML = `You selected ${valor} out of 5`
             
           }
-          form.reset();
 
     } )
 
