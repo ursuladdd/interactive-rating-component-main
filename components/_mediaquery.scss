@@ -1,2 +1,40 @@
 @use "../abstract/variaveis";
 @use "../abstract/mixins";
+
+
+@media (max-width: 480px) {
+    
+.pai_container {
+    height: 400px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 20px;
+    padding: 30px;
+    .filho_container img {
+        margin-bottom: 20px;
+    }
+    .text_filho {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    h2 {
+        @include mixins.size-weight-color(1.7rem, 700, variaveis.$White);
+    }
+    p {
+        @include mixins.size-weight-color(1rem , 300, variaveis.$Light-Grey);
+        padding-right: 0px;
+    }
+    .filho_meio {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+   
+    label {
+        padding: 14px 20px;
+    }
+}
+}
+}
